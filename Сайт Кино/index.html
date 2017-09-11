@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all">
+	<title>Сайт кино</title>
+	<meta charset="utf-8">
+	<script src="script1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="main-menu">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li>
+					<a href="HTMLPage2.html">Категории</a>
+					<ul class="podmenu">
+						<li><a href="#">Комедии</a></li>
+						<li><a href="#">Боевики</a></li>
+						<li><a href="#">Ужасы</a></li>
+						<li><a href="#">Мультфильмы</a></li>
+						<li><a href="#">Приключения</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Новинки</a></li>
+				<li>
+					<a href="#">ТОТ 100 ФИЛЬМОВ</a>
+					<ul class="podmenu">
+						<li><a href="#">Самые рейтинговае</a></li>
+						<li><a href="#">Самые страшные</a></li>
+						<li><a href="#">Самые популярные</a></li>
+						<li><a href="#">Топ фильмов жанра комедии</a></li>
+						<li><a href="#">Список фильмов 2016</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<span id = "outputinfo" class="newtext">Новинки:</span>
+		<div class=new>
+			<img src="images\logan.jpg"  id = "myimg">
+			<img src="images\kredo.jpg">
+			<img src="images\kong.jpg">
+			<img src="images\zver.jpg">
+			<img src="images\izgo.jpg">
+		</div>
+		<div class="table_of_films">
+			<table  id="films">
+				<tr>
+					<th rowspan="2">Название фильма</th>
+					<th colspan="2">Рейтинг фильма на различных киносайтах</th>
+					<th rowspan="2">Средний рейтинг <br> фильма</th>
+				</tr>
+				<tr>
+					<th><img src="images\imdb.png"></th>
+					<th><img src="images\kinopoisk.png"></th>
+					
+				</tr>
+				<tr>
+					<td>Один дома</td>
+					<td>7.5</td>
+					<td>8.2</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Логан</td>
+					<td>8.4</td>
+					<td>7.6</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Терминатор: Да придёт спаситель</td>
+					<td>6.6</td>
+					<td>6.8</td>
+					<td></td>
+				</tr>
+				
+			</table>
+		</div>
+		<div class="laba5">
+			<div class="lab5" onclick="lab5_1()">Задание № 1</div>
+			<div class="lab5" onclick="lab5_2()">Задание № 2</div>
+			<div class="lab5" onclick="lab5_3()">Задание № 3</div>
+			<div class="lab5" onclick="lab5_4()">Задание № 4</div>
+		</div>
+		<div class="laba6">
+			<div class="lab6" onclick="window1()">Окно 1</div>
+			<div class="lab6" onclick="button1close()">Закрыть окно 1</div>
+			<div class="lab6" onclick="window2()">Открыть окно 2</div>
+			<div class="lab6" onclick="button2close()">Закрыть окно 2</div>
+			<div class="lab6" onclick="lab6_2()">Задание № 2</div>
+			
+		</div>
+		<div class="form1">
+			<span class="name_of_form1">Заполните форму и мы подберем для вас ваши любимые фильмы!</span>
+			<form class="data" name="myform1">
+				
+				Имя:<br>
+				<input type="text" name="firstname">
+				<br>
+				Фамилия:
+				<br>
+				<input type="text" name="surname">
+				<br>
+				Год рождения:
+				<select name="birthday">
+					<option value="1999">1999</option>
+					<option value="1998">1998</option>
+					<option value="1997">1997</option>
+					<option vvalue="1996">1996</option>
+					<option value="1995">1995</option>
+					<option value="1994">1994</option>
+					<option value="1993">1993</option>
+					<option value="1992">1992</option>
+					<option value="1991">1991</option>
+					<option value="1990">1990</option>
+				</select>
+				<br>
+				Укажите ваш пол:
+				<br>
+				<input type='radio' name='s' value='мужской' /> Мужской
+				<br>
+				<input type='radio' name='s' value='женский' /> Женский
+				<br>
+				Выберите жанры кино которые вам нравятся:
+				<br>
+				<input type='checkbox' name='space' value='Боевики' /> Боевики
+				<input type='checkbox' name='space' value='Ужасы' /> Ужасы
+				<input type='checkbox' name='space' value='Комедии' /> Комедии
+				<input type='checkbox' name='space' value='Фэнтези' /> Фэнтези
+				<input type='checkbox' name='space' value='Приключения' /> Приключения
+				<br>
+				<input class="buttonform1" type="button" value="Заполнить форму" onclick="lab7_3()">
+				<input class="buttonform1" type="submit"/ value="Отправить форму"> 
+				<input class="buttonform1" type="reset" value="Очистить форму">
+				<input class = "buttonform1" type = "button" value="Форма 2" onclick="my_like_films()">
+			</form>
+		<div class="form2">	
+			<span class="name_of_form2">Мои любимые категории фильмов</span>
+			<form class="myfavouritefilms" name="myform2">
+				<select name="my_films" class="sel_form2">
+					<option>Мои любимые фильмы</option>			
+				</select>
+			</form>
+		</div>	
+		</div>
+	</div>
+</body>
+</html>

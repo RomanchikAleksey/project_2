@@ -1,0 +1,356 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial,Tahoma;
+	background-color: #E0DFE6;
+}
+div.header{
+	position: fixed;
+	top:0;
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+	width: 100%;
+	background: linear-gradient(to bottom,#D00000,#FF3030);
+	color:white;
+	z-index: 10;
+}
+div.content
+{
+	width: 1000px;
+	height: 2000px;
+	background-color: white;
+	margin: 150px auto;
+	box-shadow: 5px 5px 20px black;
+}
+div.main-menu
+{
+	width: 1000px;
+	margin: 0 auto;
+	height: 50px;
+	padding: 0px;
+}
+div.main-menu > ul {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+div.main-menu > ul > li{
+	position: relative;
+	margin: 0px 10px;
+	padding: 14px 35px;
+	float:left;
+	margin-left: 55px;
+}	
+div.main-menu > ul > li > a{
+	display: block;
+	text-decoration: none;
+	font-size: 19px;
+	text-shadow: 3px 3px 3px black;
+	color: white;
+}
+div.main-menu > ul > li:hover{
+	background:linear-gradient(to bottom,#A40A0A,#EA1313);
+	/*border-bottom: 4px solid #CC0000;*/
+	cursor: pointer;
+}
+div.main-menu > ul > li:hover ul.podmenu {
+	display: block;
+	/*animation: menuanima 1s 1;*/
+}
+div.main-menu > ul > li:hover ul.podmenu li{
+	animation: menuanima 0.6s 1;
+}
+
+ul.podmenu {
+	position: absolute;
+	display: block;
+	top: 49px;
+	left:0px;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	background-color:RGBA(249,228,225,0.7);
+	display: none;
+	width: 100%;
+}
+
+ul.podmenu a{
+	text-decoration: none;
+	color: black;
+	text-shadow: 1px 1px 1px #E1DCFF;
+}
+ul.podmenu li{
+	padding: 10px 0px 10px 18px;
+	overflow: hidden;
+	text-overflow: clip;
+}
+ul.podmenu li:hover{
+	background-color: rgba(240,220,223,0.7);
+}
+/*Второе подменю*/
+
+
+@keyframes menuanima
+{
+	0%{
+		transform: scale(1,0);
+		
+	}
+	100%{
+		transition: scale(1,1);
+
+	}
+}
+/*@keyframes imanima
+{
+	/*0%{
+		transform: skew(0deg,0deg);
+	}*/
+	0%{
+		transform: skew(0deg,7deg);
+	}
+	50%{
+		transform: skew(0deg,-7deg);
+	}
+	100%{
+		transform: skew(0deg,7deg);
+	}
+	/*100%{
+		transform: skew(0deg,0deg);
+	}
+}*/
+@keyframes imanima
+{
+	0%{border-color:red;}
+	10%{border-color:#FF00B7;}
+	20%{border-color:#DA00FF;}
+	30%{border-color:#9A00FF;}
+	40%{border-color:#1500FF;}
+	50%{border-color:#00B3FF;}
+	60%{border-color:#00FFE2;}
+	70%{border-color:#00FF5E;}
+	80%{border-color:#D5FF00;}
+	90%{border-color:#FF9A00;}
+	100%{border-color:red;}
+}
+/*Контент сайта*/
+div.content span.newtext{
+	display: block;
+	width: 960px;
+	background-color: red;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	padding:10px 20px;
+}
+div.new{
+	position: relative;
+	width: 100%;
+	height: 254px;
+	padding: 0px;
+	margin-top: 0px;
+	background: linear-gradient(to bottom,#FF7936,#FF9B36);
+	border-bottom: 38px solid red;
+
+}
+div.new img{
+	display: block;
+	float:left;
+	margin: 15px 22px;
+	height: 210px;
+	width:142px;
+	border:7px solid red; 
+	/*transform: skew(0,3deg);*/
+	box-shadow: 2px 2px 10px black;
+	animation: imanima 15s 200;
+	transition: all 1s;
+}
+
+
+/*JavaScriptBlocks*/
+div.laba5{
+	position: relative;
+	margin-top: 50px;
+	width: 960px;
+	height: 80px;
+	padding: 20px;
+}
+div.lab5{
+	display: block;
+	float: left;
+	margin-left: 80px;
+	padding: 15px;
+	background: linear-gradient(to bottom,#2323BB,#2755C7);
+	color:white;
+	width: 100px;
+}
+div.lab5:hover{
+	cursor: pointer;
+	background: linear-gradient(to bottom,#BA0CDC,#DC0CD6);
+}
+
+table th img 
+{
+	height: 60px;
+}
+table#films
+{
+	margin: auto;
+	box-shadow: 1px 1px 20px black;
+	border:1px solid #E7E7E7;
+	font-family: impact, Arial, Tahoma;
+	border-collapse: collapse;
+
+}
+table#films th
+{	box-shadow: 1px 1px 10px black;
+	background: linear-gradient(to bottom,white,#C1C1C1);
+	text-align: center;
+	
+	font-size: 18px;
+	font-weight: 100;
+	padding: 10px 5px 10px 5px;
+}
+table#films td 
+{	box-shadow: 1px 1px 10px black;
+	background: linear-gradient(to bottom,white,#C1C1C1);
+	
+	font-weight: 100;
+	padding: 10px 5px 10px 20px;
+
+}
+div.table_of_films{
+	position: relative;
+	top:25px;
+	
+}
+table th#imdb, th#kinoboisk{
+	color:#9D0303;
+	font-size: 20px;
+}
+
+/*Лабораторная работа № 6 JavaScript*/
+div.laba6
+{
+	position: relative;
+	margin-top: 50px;
+	width: 960px;
+	height: 80px;
+	padding: 20px;
+}
+
+div.lab6
+{
+	float: left;
+	margin-left: 80px;
+	padding: 15px;
+	background: linear-gradient(to bottom,#FF0000,#FFA200);
+	color:white;
+	width: 100px;
+}
+div.lab6:hover{
+	cursor: pointer;
+	background: linear-gradient(to bottom,#00FF5A,#9EFF00);
+}
+
+
+
+
+
+
+
+
+
+/*Форма*/
+
+.data{
+	margin: 0px;
+	padding: 0px;
+	height: 380px;
+	width: 940px;
+	background-color:#D60404;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-size: 18px;
+	padding: 20px 30px;
+}
+.myfavouritefilms
+{
+	margin: 0px;
+	padding: 0px;
+	height: 40px;
+	width: 940px;
+	background-color:#D60404;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-size: 18px;
+	padding: 20px 30px;
+}
+span.name_of_form1, span.name_of_form2{
+	display: block;
+	width: 960px;
+	background:linear-gradient(to bottom,#FF5E00,#FF6F00);
+	font-size: 18px;
+	font-family: tahoma, Arial;
+	padding: 8px 20px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+form.data input[type='text']{
+	width: 200px;
+	height: 25px;
+	font-size: 18px;
+	color:black;
+	font-family: tahoma,Arial;
+	border-radius: 10px;
+	box-shadow: 2px 2px 8px black;
+	margin: 6px 0px;
+	padding: 2px 10px;
+	outline: none; 
+	border:1px solid black;
+}
+form.data input[type='text']:hover
+{
+	background-color: #FFEDDA;
+}
+form.data input[type='radio']
+{
+	margin: 8px 7px;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;  	
+}
+form.data input[type='checkbox']
+{
+	margin: 10px 20px;
+	cursor: pointer;
+
+}
+form.data select, .sel_form2{
+	margin: 7px;
+	font-size: 16px;
+	color:black;
+	font-family: tahoma,Arial;
+}
+form.data input[type="button"], .buttonform1
+{
+	outline: none; 
+	cursor: pointer;
+	margin: 20px 20px;
+	padding: 15px 20px;
+	color:black;
+	font-size: 18px;
+	font-family: tahoma,Arial;
+	border-radius: 15px;
+	border:1px solid black;
+	box-shadow: 2px 2px 10px black;
+	background: white;
+	text-shadow: 1px 1px 3px black;
+	cursor: pointer;
+}
+form.data input[type="button"]:hover, .buttomform1:hover
+{
+	background:linear-gradient(to bottom,#FF5E00,#FF6F00);
+	color: white;
+
+}

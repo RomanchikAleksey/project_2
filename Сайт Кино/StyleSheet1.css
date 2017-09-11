@@ -1,0 +1,114 @@
+﻿body
+{
+    background-color:#E0DFE6;
+    margin:0px;
+    font-family: Tahoma, Arial;
+}
+div.header
+{
+    position:fixed;
+    background-color:red;
+    top:0px;
+    width:100%;
+    height:50px;
+    z-index:5;
+}
+div.content
+{
+    background-color:white;
+    width:1000px;
+    height:1200px;
+    margin:auto;
+    margin-top:120px;
+}
+.main-menu
+{
+   margin:auto;
+   width:1000px;
+   height:38px;
+   padding:12px 0px 0px 0px;
+}
+    .main-menu  li
+    {
+        display:inline;
+        padding:15px 77px 15px 77px;
+        font-size:18px;
+    }
+    .main-menu a
+    {
+        color:white;
+        font-family:"Arial NarrowArial",Tahoma, Arial;
+        text-decoration:none;
+    }       
+    .main-menu li:hover
+    {
+       background-color:#C72121;
+       border:1px solid #AD2B2B;
+    }
+.podmenu
+{
+    position:absolute;
+    top:52px;
+    left:-40px;
+}
+    .podmenu li
+    {
+        display:block;
+        list-style:none;
+        padding:0px;
+        margin:0px;
+        color:black;
+        background:#ECE6E6;
+        padding:12px 63px;
+        border:1px solid #CBC6C6;
+         display:none;
+        z-index:100;
+       
+        
+    }
+        .podmenu li a
+        {
+            color:black;
+            font-family:"Arial NarrowArial",Tahoma, Arial;
+            text-decoration:none;
+             cursor:pointer;
+             
+        }
+    .podmenu li:hover
+    {
+       background-color:#E8E1E1;
+       border:1px solid #CBC6C6;
+       cursor:pointer;
+    }
+li.category 
+{
+    position:relative;
+    
+   
+}
+li.category:hover ul.podmenu li
+{
+    display:block;
+}
+   /*Контент сайта*/
+div.news
+{
+    width:1000px;
+    height:250px;
+    position:relative;
+    margin:auto;
+    background-color:red;
+}
+div.afisha1
+{
+    position:absolute;
+    background-color:white;
+    height:210px;
+    width:180px;
+    top:20px;
+    left:20px;
+    border-radius:10px;
+    background-image:url(images/afisha1.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+}

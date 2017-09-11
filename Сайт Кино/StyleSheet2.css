@@ -1,0 +1,153 @@
+﻿body 
+{
+    margin:0px;
+    background-color:#E0DFE6;
+    font-family:Tahoma,Arial,Calibri;
+}
+div.content
+{
+    background-color:white;
+    width:1000px;
+    height:1350px;
+    margin:auto;
+    margin-top:150px;
+    margin-bottom:150px;
+    position:relative;
+    border: 1px solid #BC1111;
+    box-shadow: 3px 3px 12px black;
+}
+div.content span
+{
+    font-size:20px;
+    background-color:red;
+    color:white;
+    display:block;
+    padding:10px 0px 10px 25px;
+    width:975px;
+    text-shadow: 3px 3px 3px black;
+   
+}/*
+div.series
+{
+    width:998px;
+    height:200px;
+    border:1px solid #BC1111;
+    position:absolute;
+    top:44px;
+     margin:0px;
+}
+div.comedy
+{
+    width:100%;
+    height:200px;
+    border:1px solid #BC1111;
+    border-top:none;
+    position:absolute;
+    top:245px;
+     margin:0px;
+}
+div.horrors
+{
+    width:998px;
+    height:200px;
+    border:1px solid #BC1111;
+    border-top:none;
+    position:absolute;
+    top:445px;
+    margin:0px;
+}
+div.triller
+{
+    width:998px;
+    height:200px;
+    border:1px solid #BC1111;
+    border-top:none;
+    position:absolute;
+    top:645px;
+    margin:0px;
+}*/
+div.content >div
+{
+    border-top:1px solid #BC1111;
+    width:100%;
+    height:326px;
+    position:relative;
+    -o-transition:all 1s;
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    transition:all 1s;
+}
+ div.ramka
+{
+    background-color:red;
+    height:238px;
+    width:158px;
+    margin:20px 0px 20px 30px;
+    padding:8px 0px 0px 8px;
+    position:absolute;
+    transition: all 0.5s;
+}
+  div.ramka2
+{
+    background-color:red;
+    height:238px;
+    width:158px;
+    padding:8px 0px 0px 8px;
+    position:absolute;
+    margin:20px 0px 20px 220px;
+    transition: all 0.5s;
+}
+div.ramka3
+{
+    background-color:red;
+    height:238px;
+    width:158px;
+    padding:8px 0px 0px 8px;
+    position:absolute;
+    margin:20px 0px 20px 410px;
+    transition: all 0.5s;
+}
+div.ramka4
+{
+    background-color:red;
+    height:238px;
+    width:158px;
+    padding:8px 0px 0px 8px;
+    position:absolute;
+    margin:20px 0px 20px 600px;
+    transition: all 0.5s;
+}
+div.ramka5
+{
+    background-color:red;
+    height:238px;
+    width:158px;
+    padding:8px 0px 0px 8px;
+    position:absolute;
+    margin:20px 0px 20px 790px;
+    transition: all 0.5s;
+}
+div.content div a
+{
+    display:block;
+    position:absolute;
+    bottom:0px;
+    background-color:#FF5912;
+    color:white;
+    padding:10px 0px 10px 10px;
+    width:990px;
+    text-decoration:none;
+    text-shadow: 2px 2px 3px black;
+}
+   .content > div:hover
+    {
+        background-color:#FF922B;
+    }
+/*Создаем анимацию для страницы*/
+
+.ramka:hover,.ramka2:hover,.ramka3:hover,.ramka4:hover,
+.ramka5:hover{
+    transform: scale(1.1,1.1) skew(2deg,2deg);
+
+}
+

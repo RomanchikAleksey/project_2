@@ -1,0 +1,53 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #E3CFCF;
+	font-family: Tahoma,Arial;
+}
+div.lab1{
+	margin: 100px;
+	padding: 15px;
+	background: linear-gradient(to bottom,#2323BB,#2755C7);
+	color:white;
+	width: 100px;
+}
+div.lab1:hover{
+	cursor: pointer;
+	background: linear-gradient(to bottom,#BA0CDC,#DC0CD6);
+}
+div.lab2
+{
+	margin: 100px;
+	padding: 15px;
+	background: linear-gradient(to bottom,#FF0000,#FFA200);
+	color:white;
+	width: 100px;
+}
+div.lab2:hover{
+	cursor: pointer;
+	background: linear-gradient(to bottom,#00FF5A,#9EFF00);
+}
+div.lab3
+{
+	margin: 100px;
+	padding: 15px;
+	background: linear-gradient(to bottom,#007665,#00764D);
+	color:white;
+	width: 100px;
+}
+div.lab3:hover{
+	cursor: pointer;
+	background: linear-gradient(to bottom,#007614,#2B7600);
+}
+div.lab4
+{
+	margin: 100px;
+	padding: 15px;
+	background: linear-gradient(to bottom,#4E0C7E,#A968EB);
+	color:white;
+	width: 100px;
+}
+div.lab4:hover{
+	cursor: pointer;
+	background: linear-gradient(to bottom,#251292,#1628EC);
+}
